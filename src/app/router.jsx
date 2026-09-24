@@ -11,9 +11,12 @@ export default function Router() {
         <BrowserRouter>
 
             <Routes>
-                <Route path="/home" element={<Home />} />
+
+                <Route path="/" element={<Home />} />
+               
                 <Route path="/cliente" element={<ClientePage />} />
-                <Route path="/cliente-form" element={<ClienteForm />} />
+                <Route path="/cliente-form/:idCliente?" element={<ClienteForm />} />
+
             </Routes>
 
        </BrowserRouter>
